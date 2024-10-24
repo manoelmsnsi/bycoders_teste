@@ -3,7 +3,7 @@
 
 Essa aplicação foi construída em Python, utilizando , Redis para cache, request e curl-cffi, para requisição. A aplicação possui módulos distintos, cada um oferecendo funcionalidades específicas.
 
-# PRIMEIROS PASSOS [NÃO NECESSARIOS VIA DOCKER]
+## PRIMEIROS PASSOS [NÃO NECESSARIOS VIA DOCKER]
 * ## INSTALE AS DEPENDÊNCIAS NECESSÁRIAS:
     bash
     * poetry install
@@ -18,7 +18,7 @@ Essa aplicação foi construída em Python, utilizando , Redis para cache, reque
         * REDIS_TIME=60
 
 
-# INICIANDO O PROJETO
+## INICIANDO O PROJETO
 * FOI CONFIGURADO DUAS OPÇÕES DE DEPURAÇÃOO SENDO ELAS.
     *  EXECUTAR FASTPI -> ONDE IRA SUBIR UMA API PARA FAZER A MANIPULAÇÃO DOS DADOS.
 
@@ -29,7 +29,7 @@ Essa aplicação foi construída em Python, utilizando , Redis para cache, reque
 
 Essa aplicação foi construída em Python, utilizando Redis para cache, request e curl-cffi, para requisição. A aplicação possui módulos distintos, cada um oferecendo funcionalidades específicas.
 
-# PRIMEIROS PASSOS [NÃO NECESSÁRIOS VIA DOCKER]
+## PRIMEIROS PASSOS [NÃO NECESSÁRIOS VIA DOCKER]
 * ## INSTALE AS DEPENDÊNCIAS NECESSÁRIAS:
     ```bash
     poetry install
@@ -46,7 +46,7 @@ Essa aplicação foi construída em Python, utilizando Redis para cache, request
         REDIS_TIME=60
         ```
 
-# INICIANDO O PROJETO
+## INICIANDO O PROJETO
 * FOI CONFIGURADO DUAS OPÇÕES DE DEPURAÇÃO SENDO ELAS:
     *  EXECUTAR FASTAPI -> ONDE IRÁ SUBIR UMA API PARA FAZER A MANIPULAÇÃO DOS DADOS.
 
@@ -105,23 +105,16 @@ Essa aplicação foi construída em Python, utilizando Redis para cache, request
     * **Para que serve:**
         Utilizada para garantir a integridade dos dados ao validar e converter dados entre tipos diferentes de maneira automática.
 
-* **Alembic**
-    * **Descrição:**
-        Alembic é uma ferramenta de migração de banco de dados para SQLAlchemy, que permite a gestão e o versionamento das alterações na estrutura do banco de dados.
-    * **Para que serve:**
-        Utilizada para aplicar, revisar e gerenciar mudanças no esquema do banco de dados ao longo do desenvolvimento da aplicação.
+## ESTRUTURA DO PROJETO
 ```
 projeto/
 │
 ├── src/
 │   ├── system/
-│   │   ├── alembic/
-│   │   │   ├── env.py
-│   │   │   ├── README
-│   │   │   ├── script.py.mako
-│   │   │   └── versions/
-│   │   │       ├── __init__.py
-│   │   │       └── ...
+│   │   ├── integrations/
+│   │   │   ├── api_coin_gecko.py
+│   │   │   ├── api_cotacao.py
+│   │   │   └── api_store_mercado_bitcoin.py
 │   │   ├── core/
 │   │   │   ├── model_core.py
 │   │   │   ├── logger_core.py
@@ -147,4 +140,5 @@ projeto/
 ├── poetry.toml
 └── main.py
 ```
-# MANOEL MESSIAS DA SILVA NETO
+## AUTOR
+#### MANOEL MESSIAS DA SILVA NETO
