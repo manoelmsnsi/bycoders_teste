@@ -110,7 +110,7 @@ Essa aplicação foi construída em Python, utilizando Redis para cache, request
         Alembic é uma ferramenta de migração de banco de dados para SQLAlchemy, que permite a gestão e o versionamento das alterações na estrutura do banco de dados.
     * **Para que serve:**
         Utilizada para aplicar, revisar e gerenciar mudanças no esquema do banco de dados ao longo do desenvolvimento da aplicação.
-
+```
 projeto/
 │
 ├── src/
@@ -146,4 +146,5 @@ projeto/
 ├── poetry.lock
 ├── poetry.toml
 └── main.py
+```
 # MANOEL MESSIAS DA SILVA NETO
