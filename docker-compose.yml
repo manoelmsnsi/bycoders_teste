@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    environment:
+      STORE_MERCADO_BITCOIN_BASE_URL: https://store.mercadobitcoin.com.br/api/v1/
+      COTACAO_BASE_URL: https://economia.awesomeapi.com.br/
+      REDIS_HOST: redis_teste_manoel
+      REDIS_PORT: 6379
+      REDIS_TIME: 60
+    ports:
+      - 8002:8002
+    depends_on:
+      - redis_teste_manoel
+    networks:
+      - network_teste_manoel
+
+  redis_teste_manoel:
+    image: redis:latest
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 1G
+    networks:
+      network_teste_manoel:
+    volumes:
+      - vol_redis_teste_manoel:/data
+
+networks:
+  network_teste_manoel:
+volumes:
+  vol_redis_teste_manoel:
