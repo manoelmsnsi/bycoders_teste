@@ -1,33 +1,7 @@
 
-## TESTE - MANOEL MESSIAS DA SILVA NETO
+## TESTE BYCORDERS
 
 Essa aplicação foi construída em Python, utilizando , Redis para cache, request e curl-cffi, para requisição. A aplicação possui módulos distintos, cada um oferecendo funcionalidades específicas.
-
-## PRIMEIROS PASSOS [NÃO NECESSARIOS VIA DOCKER]
-* ## INSTALE AS DEPENDÊNCIAS NECESSÁRIAS:
-    bash
-    * poetry install
-    * poetry shell
-
-* ### DEFINA AS ENVIROMENTS
-    * .env
-        * STORE_MERCADO_BITCOIN_BASE_URL=https://store.mercadobitcoin.com.br/api/v1/
-        * COTACAO_BASE_URL=https://economia.awesomeapi.com.br/
-        * REDIS_HOST=0.0.0.0
-        * REDIS_PORT=6379
-        * REDIS_TIME=60
-
-
-## INICIANDO O PROJETO
-* FOI CONFIGURADO DUAS OPÇÕES DE DEPURAÇÃOO SENDO ELAS.
-    *  EXECUTAR FASTPI -> ONDE IRA SUBIR UMA API PARA FAZER A MANIPULAÇÃO DOS DADOS.
-
-* ### EXECUÇÃO MANUAL.
-    * API FASTAPI
-        * uvicorn main:app --reload --host 0.0.0.0 --port 8000
-## TESTE - MANOEL MESSIAS DA SILVA NETO
-
-Essa aplicação foi construída em Python, utilizando Redis para cache, request e curl-cffi, para requisição. A aplicação possui módulos distintos, cada um oferecendo funcionalidades específicas.
 
 ## PRIMEIROS PASSOS [NÃO NECESSÁRIOS VIA DOCKER]
 * ## INSTALE AS DEPENDÊNCIAS NECESSÁRIAS:
