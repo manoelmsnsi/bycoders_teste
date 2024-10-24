@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "teste-manoel"
+name = "bycoders-manoel"
 version = "0.1.0"
 description = ""
 authors = ["Manoel Messias <manoelmsnsi@gmail.com>"]
