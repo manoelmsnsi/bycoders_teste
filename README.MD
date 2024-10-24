@@ -138,6 +138,9 @@ projeto/
 ├── alembic.ini
 ├── poetry.lock
 ├── poetry.toml
+├── docker-compose.yml
+├── Dockerfile.yml
+├── makefile
 └── main.py
 ```
 ## AUTOR
