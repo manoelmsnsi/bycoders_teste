@@ -19,6 +19,9 @@ Essa aplicação foi construída em Python, utilizando , Redis para cache, reque
         REDIS_PORT=6379
         REDIS_TIME=60
         ```
+## ACESSOS
+* Usuário: teste
+* Senha: teste
 
 ## INICIANDO O PROJETO
 * FOI CONFIGURADO DUAS OPÇÕES DE DEPURAÇÃO SENDO ELAS:
